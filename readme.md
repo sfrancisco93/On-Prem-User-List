@@ -2,16 +2,16 @@
 In this script, we have created a User class in Python. The script will initially populate three CSV files on your end: Active, Pending, and Inactive. Afterwards, the script will continue to actively listen for incoming User webhooks from Zoom to move the user between the CSV files. 
 
 # Pseudocode
-	1. Call Get Users and retrieve all users
-		- API Call: GET https://api.zoom.us/v2/users
-		- Parameters:
-			status = active
-			page_size = 300
+1. Call Get Users and retrieve all users
+	- API Call: GET https://api.zoom.us/v2/users
+	- Parameters:
+		status = active
+		page_size = 300
 
-	2. For each user, create User
-	3. Append User to User List
-	4. Save User List in CSV File
-	5. Continue listening for the following:
+2. For each user, create User
+3. Append User to User List
+4. Save User List in CSV File
+5. Continue listening for the following:
 	
 ```python
 	if(event == 'user.created'):
@@ -32,7 +32,7 @@ In this script, we have created a User class in Python. The script will initiall
 		print('User Alert - A user has been deleted')
 ```
 
-	6. Update CSV files
+6. Update CSV files
 
 #Future implementation
 * Ability to run commands such as:
