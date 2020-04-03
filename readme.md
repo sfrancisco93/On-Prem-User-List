@@ -3,16 +3,15 @@ In this script, we have created a User class in Python. The script will initiall
 
 #Pseudocode
 
-	1. Call Get Users and retrieve all users
-		- API Call: GET https://api.zoom.us/v2/users
-		- Parameters:
-			status = active
-			page_size = 300
-
-	2. For each user, create User
-	3. Append User to User List
-	4. Save User List in CSV File
-	5. Continue listening for the following:
+1. Call Get Users and retrieve all users
+	- API Call: GET https://api.zoom.us/v2/users
+	- Parameters:
+		status = active
+		page_size = 300
+2. For each user, create User
+3. Append User to User List
+4. Save User List in CSV File
+5. Continue listening for the following:
 	
 ```python
 	if(event == 'user.created'):
@@ -33,7 +32,7 @@ In this script, we have created a User class in Python. The script will initiall
 		print('User Alert - A user has been deleted')
 ```
 
-	6. Update CSV files
+6. Update CSV files
 
 #Future implementation
 * Ability to run commands such as:
@@ -42,4 +41,5 @@ In this script, we have created a User class in Python. The script will initiall
 	deleteUser('Email Address')
 	bill = User('bill_nye@email.com')
 	bill.createMeeting(meetingType, pmi, start date, start time)
+
 ```
