@@ -1,8 +1,7 @@
 # Building Block for managing Zoom solely through terminal
 In this script, we have created a User class in Python. The script will initially populate three CSV files on your end: Active, Pending, and Inactive. Afterwards, the script will continue to actively listen for incoming User webhooks from Zoom to move the user between the CSV files. 
 
-#Pseudocode
-
+# Pseudocode
 	1. Call Get Users and retrieve all users
 		- API Call: GET https://api.zoom.us/v2/users
 		- Parameters:
